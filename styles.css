@@ -1,0 +1,52 @@
+/* Custom styles for enhanced responsiveness and aesthetics */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #4a90e2;
+    bottom: 0;
+    left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p, ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 800px;
+    }
+}
